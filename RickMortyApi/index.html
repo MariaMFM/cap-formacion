@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RickMortyApi</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img src="./img/RickLogo.png" alt="Logo">
+            <div id="filters">
+                <input type="text" id="nameFilter" placeholder="Name" >
+                <select class="filter">
+                    <option class="titleFilter" value="">Status</option>
+                    <option value="alive">Alive</option>
+                    <option value="dead">Dead</option>
+                    <option value="unknown">Unknown</option>
+                </select>
+                <input type="text" id="speciesFilter" placeholder="Species" >
+                <input type="text" id="typeFilter" placeholder="Type" >
+                <select class="filter">
+                    <option class="titleFilter" value="">Gender</option>
+                    <option value="female">female</option>
+                    <option value="male">male</option>
+                    <option value="genderless">genderless</option>
+                    <option value="unknown">unknown</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="allcharacters">
+            <div class="characterCard" id="characterList">
+                <!--<div class="character">
+                    <div class="characterImg">
+                        <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick Sanchez">
+                    </div>
+                    <div class="characterInfo">
+                        <h2 class="characterName">Rick Sanchez</h2>
+                    </div>
+                </div>-->
+            </div>  
+        </div>
+        <div class="pagination">
+            <button id="previousBtn" class="paginationButton"><<</button>
+            <button id="nextBtn" class="paginationButton">>></button>
+        </div>
+    </main>
+
+    <!--<script src="./js/index.js"></script>-->
+
+</body>
+</html>
