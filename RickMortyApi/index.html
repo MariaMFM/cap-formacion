@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RickMortyApi</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!--<script src="./js/index.js"></script>-->
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img src="./img/RickLogo.png" alt="Logo">
+            <div id="filters">
+                <input type="text" id="name-filter" placeholder="Name" >
+                <select class="filter"  id="status-filter">
+                    <option class="title-filter" value="">Status</option>
+                    <option value="alive">Alive</option>
+                    <option value="dead">Dead</option>
+                    <option value="unknown">Unknown</option>
+                </select>
+                <input type="text" id="species-filter" placeholder="Species" >
+                <input type="text" id="type-filter" placeholder="Type" >
+                <select class="filter" id="gender-filter">
+                    <option class="title-filter" value="">Gender</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="genderless">Genderless</option>
+                    <option value="unknown">Unknown</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="all-characters">
+            <div class="character-card" id="character-list"></div>  
+        </div>
+        <div class="pagination">
+            <button id="previous-btn" class="pagination-button" type="button"><<</button>
+            <button id="next-btn" class="pagination-button" type="button">>></button>
+        </div>
+    </main>
+</body>
+    <script src="./js/index.js"></script>  
+</html>
